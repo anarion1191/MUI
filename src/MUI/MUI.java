@@ -6,8 +6,8 @@ public class MUI {
     
     private Vector<Item> items;
 
-    public MUI(int count) {
-        items = new Vector<Item>(count);
+    public MUI() {
+        items = new Vector<Item>();
     }
 
     public void addItem(Item item) {
