@@ -7,7 +7,9 @@ public abstract class Item {
     public abstract void action();
 
     public String getName() {
+    	
         return name;
+        
     }
 
 }
