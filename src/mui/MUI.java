@@ -1,11 +1,10 @@
 package mui;
 
 import java.util.Vector;
-import mui.exception.MenuException;
-import mui.menu.item.Item;
-import mui.exception.ExitMenuException;
-import mui.exception.BadMenuChoiceException;
 import java.util.Scanner;
+import mui.menu.item.Item;
+import mui.exception.MenuException;
+import mui.exception.BadMenuChoiceException;
 
 /**
  * Represents a Menu User Interface that is to be
@@ -67,12 +66,14 @@ public class MUI {
      * 
      * @throws ExitMenuException If the Exit item is selected.
      */
-    public void run() throws ExitMenuException {
+    public void run() {
     	
-    	while(true) {
+    	boolean continueLoop = true;
+    	Scanner input = null;
+    	
+    	while(continueLoop) {
     		
     		show();
-    		Scanner input = null;
     		
     		try {
     			
@@ -81,11 +82,7 @@ public class MUI {
     			if(choice < 1 || choice > items.size()) {
     				throw new BadMenuChoiceException(choice, items.size());
     			}
-    			items.elementAt(choice-1).action();
-    			
-    		} catch(ExitMenuException e) {
-    			
-    			return; //break out of the loop
+    			continueLoop = items.elementAt(choice-1).action();
     			
     		} catch(BadMenuChoiceException e) {
     			
