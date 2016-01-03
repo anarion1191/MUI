@@ -1,7 +1,5 @@
 package mui.menu.item;
 
-import mui.exception.MenuException;
-
 public abstract class Item {
     
     protected String name;
@@ -13,7 +11,7 @@ public abstract class Item {
      * the menu loop must end.
      * @throws MenuException If a bad menu item has been selected
      */
-    public abstract boolean action() throws MenuException;
+    public abstract boolean action();
 
     public String getName() {
     	

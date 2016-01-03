@@ -1,7 +1,5 @@
 package mui.menu.item;
 
-import mui.exception.MenuException;
-
 public class Exit extends Item {
 	
     public Exit() {
@@ -10,7 +8,7 @@ public class Exit extends Item {
     
     }
     
-    public boolean action() throws MenuException {
+    public boolean action() {
         
     	return false;
     

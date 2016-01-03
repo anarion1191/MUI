@@ -3,7 +3,6 @@ package mui;
 import java.util.Vector;
 import java.util.Scanner;
 import mui.menu.item.Item;
-import mui.exception.MenuException;
 import mui.exception.BadMenuChoiceException;
 
 /**
@@ -87,11 +86,6 @@ public class MUI {
     		} catch(BadMenuChoiceException e) {
     			
     			System.err.println(e);
-    			return;
-    			
-    		} catch(MenuException e) {
-    			
-    			System.err.println("A menu exception has occured.");
     			return;
     			
     		} finally {
