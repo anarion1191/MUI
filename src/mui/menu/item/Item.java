@@ -6,7 +6,7 @@ package mui.menu.item;
  * class and override it's {@code action()}
  * method.
  * 
- * @author anarion1191
+ * @author Kian Nejadfard
  *
  */
 public abstract class Item {
