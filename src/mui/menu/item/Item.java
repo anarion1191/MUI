@@ -11,6 +11,11 @@ package mui.menu.item;
  */
 public abstract class Item {
     
+	/**
+	 * A {@code String} representing the menu item's
+	 * name that is to be printed in the menu list for
+	 * users to see.
+	 */
     protected String name;
 
     /**
