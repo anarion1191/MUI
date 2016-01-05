@@ -40,7 +40,7 @@ public class MUI {
      * 
      * @param item An object of type {@code Item} or a subclass.
      */
-    public void addItem(Item item) {
+    final public void addItem(Item item) {
         
     	items.add(item);
     
@@ -65,7 +65,7 @@ public class MUI {
      * 
      * @throws ExitMenuException If the Exit item is selected.
      */
-    public void run() {
+    final public void run() {
     	
     	boolean continueLoop = true;
     	Scanner input = null;
