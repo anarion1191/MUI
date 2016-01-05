@@ -1,5 +1,14 @@
 package mui.menu.item;
 
+/**
+ * Abstract class representing a menu item.
+ * Menu items should extend the {@code Item}
+ * class and override it's {@code action()}
+ * method.
+ * 
+ * @author anarion1191
+ *
+ */
 public abstract class Item {
     
     protected String name;
@@ -13,7 +22,7 @@ public abstract class Item {
      */
     public abstract boolean action();
 
-    public String getName() {
+    final public String getName() {
     	
         return name;
         
