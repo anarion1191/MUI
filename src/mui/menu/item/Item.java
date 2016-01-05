@@ -19,18 +19,36 @@ public abstract class Item {
     protected String name;
 
     /**
+     * Abstract function that must be overridden by
+     * subclasses to perform necessary actions for
+     * a certain menu item.
      * 
      * @return True if the menu loop must continue after
      * the function has finished execution. False if
      * the menu loop must end.
-     * @throws MenuException If a bad menu item has been selected
      */
     public abstract boolean action();
 
+    /**
+     * Get the name field of a menu item.
+     * 
+     * @return {@code String} The name of the menu item
+     */
     final public String getName() {
     	
         return name;
         
+    }
+    
+    /**
+     * Set the name field of a menu item.
+     * 
+     * @param newName A {@code String} object containing the name 
+     */
+    final public void setName(String newName) {
+    	
+    	name = newName;
+    	
     }
 
 }
