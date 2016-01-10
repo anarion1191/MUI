@@ -18,11 +18,9 @@ import mui.exception.BadMenuChoiceException;
  */
 public class MUI {
     
-	/**
-	 * A {@code Vector} containing objects of type {@code Item}
-	 * or the subclasses of {@code Item} that construct the
-	 * menu.
-	 */
+    /**
+     * A {@code Vector} containing subclasses of {@code Item}
+     */
     private Vector<Item> items;
 
     /**
